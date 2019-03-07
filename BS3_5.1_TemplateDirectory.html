@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exam 2 Bootstrap Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #737373;
+    }
+    #myNavbar li a {
+      color: white;
+    }
+    #myNavbar li a:hover {
+      text-decoration: underline;
+    }
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+    .row.content {
+      height: 450px
+    }
+    .main-content {
+      padding: 10px
+    }
+    img {
+      padding-bottom: 10px;
+    }
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #444;
+      height: 100%;
+    }
+    .sidenav a {
+      color: white;
+    }
+    .sidenav h3 {
+      color: white;
+    }
+    .form-control-static {
+      color: white;
+    }
+
+    /* Set black background color, white text and some padding */
+
+    footer {
+      background-color: #f1f1f1;
+      color: black;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--NAVBAR
+  ===========================================================================-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <!--<a class="navbar-brand" href="#">Logo</a>-->
+        <img class="img-responsive" src="assets/logo.png" alt="">
+      </div>
+      <!--MyDaytonaState-->
+      <ul class="nav navbar-nav navbar-right hidden-xs">
+        <li><a href="#"><img class="img-responsive" src="assets/myDaytonaState.png" alt="MyDaytonaState"></a></li>
+      </ul>
+      <!--DaytonaStateNav-->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Academics</a></li>
+          <li><a href="http://www.dscfalcons.com">Athletics</a></li>
+          <li><a href="#">Student Life</a></li>
+          <li><a href="http://daytonastate.edu/help/">Help</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Faculty/Staff</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--TEXT-CENTER
+  ===========================================================================-->
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+        <h3 class="sidenav-header">School of Computer Science</h3>
+        <p><a href="#">Contacts</a></p>
+        <p><a href="#">Faculty</a></p>
+        <p><a href="#">Programs</a></p>
+        <p><a href="#">Documents</a></p>
+        <p><a href="#">Links</a></p>
+        <p><a href="#">Pathways</a></p>
+      </div>
+      <div class="main-content col-sm-8 text-left">
+        <img class="img-responsive" src="assets/computerScience.jpg">
+        <p>While the computing field is one of the fastest growing segments of industry, it is also one of the fastest changing areas technologically. Computing professionals’ education does not stop with the college degree, but continues with seminars, conferences, and advanced courses and training. In computer theory and applications, new ideas are developed every day. Success requires an ongoing commitment to learning to maintain knowledge, skills and career opportunities.
+        Daytona State College is the perfect place to start preparing for a career in the computer science and information technology fields. With more than a dozen programs from which to choose, you can be sure to get started on the right track.
+        Most programs also are transferable, allowing you to advance your studies to higher levels, including the Daytona State College Bachelor of Science in Engineering Technology, which you can earn in only two years after completing your associate of science degree. Daytona State College also has articulation agreements with other four-year institutions that will apply your AS degree credits toward a bachelor’s degree.
+        For more information visit <a href="#">the Computer Science website</a>.</p>
+        <hr>
+        <h3>Gainful Employment Information</h3>
+        <p>The U.S. Department of Education requires colleges to disclose a variety of information for any financial aid eligible program that “prepares students for gainful employment in a recognized occupation.” The information provided here describes the graduation rates, the median debt of students who completed the program and other important information regarding gainful employment for the latest completed academic year (as of July 1).</p>
+
+        <ul>
+          <li><a href="https://www.daytonastate.edu/gainfulemployment/0938-Computer_Programming/Gedt.html">Computer Programming</a></li>
+          <li><a href="https://www.daytonastate.edu/gainfulemployment/0903-Information_Technology_Analysis/Gedt.html">Information Technology Analysis</a></li>
+          <li><a href="https://www.daytonastate.edu/gainfulemployment/0904-Network_Server_Administration/Gedt.html">Information Technology Management</a>&nbsp;(Network Server Administration)
+          </li>
+          <li><a href="https://www.daytonastate.edu/gainfulemployment/0908-Advanced_Network_Infrastructure/Gedt.html">Network System Developer</a> (Advanced Network Infrastructure)
+          </li>
+          <li><a href="https://www.daytonastate.edu/gainfulemployment/0909-Web_Development_Specialist/Gedt.html">Web Development Specialist</a></li>
+        </ul>
+
+      </div><!--main-content col-sm-8 text-left-->
+
+<!--SIDENAV
+===========================================================================-->
+      <div class="col-sm-2 sidenav">
+        <!--STATIC FORM TEXT SM,MD,LG-->
+            <h5 class="form-control-static text-right hidden-xs exploreDaytonaState">Explore Daytona State</h5>
+        <!--SEARCHBAR SM,MD,LG-->
+        <div>
+          <div class="input-group">
+            <input type="text" class="form-control col-xs-4">
+            <span class="input-group-btn">
+              <button class="btn btn-info" type="button">Search</button>
+            </span>
+          </div>
+        </div><!--col-md-6 col-sm-12 col-xs-12--><!--row col-sm-12 pull-right text-right col-md-6 col-lg-12 hidden-xs-->
+<!--        <div class="well">
+          <p>ADS</p>
+        </div>
+        <div class="well">
+          <p>ADS</p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+  <footer class="container-fluid text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="pull-right" id="social-media">
+            <a href="http://www.facebook.com/pages/Daytona-State-College/111841103729" target="_blank"> <img style="margin-left: 0px; margin-right: 0px; float: left; margin-top: 4px; margin-bottom: 2px;" title="Daytona State College Facebook" src="assets/fb.png" alt="Daytona State College Facebook" width="50" height="51" /> </a>
+            <a href="http://twitter.com/DSC_News/" target="_blank"> <img style="margin-left: 4px; margin-right: 0px; float: left; margin-top: 4px; margin-bottom: 2px;" title="Daytona State College Twitter" src="assets/tw.png" alt="Daytona State College Twitter" width="51" height="51" /> </a>
+            <a href="http://www.youtube.com/user/DaytonaFalcon" target="_blank"> <img style="margin-left: 4px; margin-right: 0px; float: left; margin-top: 4px; margin-bottom: 2px;" title="Daytona State College Youtube" src="assets/ytt.png" alt="Daytona State College Youtube" width="51" height="51" /> </a>
+            <a href="http://www.linkedin.com/company/835780?trk=tyah" target="_blank"> <img style="margin-left: 4px; margin-right: 0px; float: left; margin-top: 4px; margin-bottom: 2px;" title="Daytona State College Linkedin" src="assets/in.png" alt="Daytona State College Linkedin" width="50" height="50" /> </a>
+            <a href="/rss/index.html" target="_blank"> <img style="margin-left: 4px; margin-right: 0px; float: left; margin-top: 4px; margin-bottom: 2px;" title="Daytona State College RSS" src="assets/rss.png" alt="Daytona State College RSS" width="51" height="51" /> </a>
+          </div><!--pull-right-->
+          <div class="" id="footerlinks">
+            <ul class="list-inline">
+              <li><span style="text-decoration: underline;"><a href="/mission.html">©2010 Daytona State College</a></span></li>
+              <li><span style="text-decoration: underline;"><a href="/cas/index.html">Accessibility</a></span></li>
+              <li><span style="text-decoration: underline;"><a href="/contact.html">Contact DSC</a></span></li>
+              <li><span style="text-decoration: underline;"><a href="/maps/index.html">Campuses</a></span></li>
+              <li><span style="text-decoration: underline;"><a href="/equity/index.html">Non-Discrimination</a></span></li>
+              <li><span style="text-decoration: underline;"><a href="http://webapps.daytonastate.edu/ics/ClientConfig/HtmlContent/Privacy.html">Privacy Policy</a></span></li>
+              <li><span style="text-decoration: underline;"><a href="/web_central/help.html">Web Help</a></span></li>
+            </ul>
+          </div>
+            <p class="footertext">Daytona State College&nbsp;<span style="text-decoration: underline;"><a title="1200 W. International Speedway Blvd. Daytona Beach, Florida 32114" href="/maps/dbmap.html">1200 W. International Speedway Blvd., Daytona Beach, Florida 32114</a></span>&nbsp;(386) 506-3000</p>
+            <p class="footertext">Daytona State College is an <span style="text-decoration: underline;"><a href="/equity/index.html">equal opportunity institution.</a></span></p>
+            <p class="footertext">If you are having any difficulty accessing our website, please contact the help desk at (386) 506-3950 or <span style="text-decoration: underline;"><a href="mailto:helpdesk@daytonastate.edu" target="_blank">helpdesk@daytonastate.edu</a></span>.
+        </div><!--col-sm-12 col-md-12 col-lg-12-->
+      </div><!--row-->
+    </div><!--container-->
+  </footer>
+
+</body>
+
+</html>

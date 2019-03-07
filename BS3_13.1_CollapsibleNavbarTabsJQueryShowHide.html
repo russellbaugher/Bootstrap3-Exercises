@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Final Exam Part 1</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-
+  BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstraptheme.
+  min.css" integrity="sha384-
+  rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-
+  Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <style media="screen">
+    #DSCLogo {
+      text-shadow: 0.5px 0.5px 0.5px teal, -0.5px -0.5px 0.5px teal;
+      color: #eee;
+      font-size: 3rem;
+    }
+    #whiteLinks a {
+      color: #eee;
+      font-size: 2rem;
+    }
+    #navbarGrey {
+      background: #444;
+    }
+    #seePicturesButton {
+      margin-bottom: 1rem;
+    }
+    #myCarousel {
+      display: none;
+    }
+  </style>
+  <title>Final Exam</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse" id="navbarGrey">
+    <div class="container-fluid">
+<!-- Navbar -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="DSCLogo" href="#">Daytona State College</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar"><!---->
+        <ul class="nav navbar-nav" id="whiteLinks">
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Academics</a></li>
+          <li><a href="#">Athletics</a></li>
+          <li><a href="#">Student Life</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+<!-- Tabs -->
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Mission</a></li>
+    <li><a data-toggle="tab" href="#menu1">Academic Advising</a></li>
+    <li><a data-toggle="tab" href="#menu2">Academic Support</a></li>
+    <li><a data-toggle="tab" href="#menu3">Assessment Services</a></li>
+  </ul>
+<!-- Tabs Content -->
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Mission</h3>
+      <p>Daytona State College, a comprehensive public college, provides access to a range of flexible programs from community enrichment to the baccalaureate degree, emphasizing student success, embracing excellence and diversity, as well as fostering innovation to enhance teaching and learning.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Academic Advising</h3>
+      <p>The mission of the Academic Advising Department at Daytona State College is part of a collaborative process designed to help students succeed academically by encouraging them to be proactive in planning their own education. Academic Advisors will assist students with developing an appropriate educational plan that will lead to graduation by providing them with timely and accurate information, making referrals to campus resources, and encouraging students to utilize these resources.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Academic Support</h3>
+      <p>Academic Support Services is a collaboration of the Academic Support Center, Library and the DSC-UCF Writing Center. Together, our mission is to create a cooperative environment offering direct referrals that will foster student success, enhance faculty support and provide the services and resources needed to promote college-wide teaching and learning. Our three departments have the main goal to ensure the success of all students. The services within our areas support what happens in the classroom, either face-to-face or on-line.</p>
+<!-- Carousel Button -->
+      <button type="button" class="btn btn-info" id="seePicturesButton">See Pictures</button>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="assets/a.jpg" alt="Los Angeles" style="width:100%;">
+              </div>
+              <div class="item">
+                <img src="assets/b.jpg" alt="Chicago" style="width:100%;">
+              </div>
+              <div class="item">
+                <img src="assets/c.jpg" alt="New york" style="width:100%;">
+              </div>
+              <div class="item">
+                <img src="assets/d.jpg" alt="New york" style="width:100%;">
+              </div>
+            </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    </div>
+
+    <div id="menu3" class="tab-pane fade">
+      <h3>Assessment Services</h3>
+      <p>Our Specialists in Assessment Services (aka the Test Center) are here to assist you throughout your college experience. Assessment Services administers required exams from placement through completion of Daytona State College programs. Assessment Services also offers exams to earn college credit, GED® diplomas, for distance learning and specialized programs. Assessment Services Centers are open for testing Monday through Friday. Please contact one of our many convenient locations listed below for specific testing information and to confirm center hours which are subject to change.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// Show/Hide Carousel Academic Support Tab
+$(document).ready(function(){
+  $("#seePicturesButton").click(function(){
+    $("#myCarousel").animate({
+      height: 'toggle'
+    });
+  });
+});
+</script>
+
+</body>
+
+</html>

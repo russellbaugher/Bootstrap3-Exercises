@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 4</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-
+BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstraptheme.
+min.css" integrity="sha384-
+rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-
+Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+    .logo {
+      min-height: 90px;
+      font-size: 200%;
+      color: white;
+      background-color: #737373;
+    }
+    .exploreDaytonaState {
+      margin-right: 20px;
+      margin-bottom: -10px
+    }
+    .searchBarRight {
+      margin-bottom: 3.5px;
+    }
+    .searchButtonRight {
+      margin-bottom: 0px;
+      color: black;
+    }
+    .horizontalNav {
+      background-color: #6633FF;
+      border-color: black;
+    }
+    .hamburger {
+      background-color: black;
+    }
+    .nav.nav-justified li a {
+      color: white;
+      top:4px;
+    }
+    .nav.nav-justified li a:hover {
+      color: black;
+    }
+    .xsSearchbar {
+      margin-left: 15px;
+      margin-bottom: -100px;
+      bottom:42.5px;
+    }
+    .footer {
+      margin-top:20px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid row1">
+
+    <div class="row logo">
+
+<!--LOGO (Row 1, gray)
+===========================================-->
+      <div class="col-md-6 col-sm-6 col-xs-12">
+
+        <div class="col1 text-left">
+          <img class="img-responsive" src="assets/logo.png" alt="Daytona State College"> <!--class="img-responsive"-->
+        </div><!--col1 text-left-->
+      </div><!--col-md-6 col-sm-6 col-xs-6-->
+
+<!--STATIC FORM TEXT
+=======================================-->
+      <h5 class="form-control-static text-right hidden-xs exploreDaytonaState">Explore Daytona State</h5>
+
+<!--SEARCHBAR SM,MD,LG (Row 1, gray)
+================================================================-->
+      <div class="col-md-6 col-sm-6 col-xs-6 hidden-xs">
+        <form class="navbar-form navbar-right">
+          <div class="form-group">
+
+            <input class="form-control searchBarRight" type="text" placeholder="">
+          </div>
+          <button class="btn button-default searchButtonRight" type="submit">Search</button>
+        </form>
+      </div><!--col-md-6 col-sm-12 col-xs-12-->
+
+    </div><!--row logo-->
+
+  </div><!--container-fluid row1-->
+
+<!-- ROW 2
+========================================================-->
+      <div class="row row2">
+
+        <nav class="navbar navbar-default horizontalNav">
+          <div class="container-fluid">
+
+<!--COLLAPSIBLE NAVBAR XS ONLY (Row '3')
+=======================================================-->
+            <div class="navbar-header"><!--header will remain when collapsed-->
+            <div class="container"><!--this makes marginright on hamburger-->
+              <button class="navbar-toggle hamburger" type="button" data-toggle="collapse" data-target="#navCollapse">
+                <span class="icon-bar"></span><!--hamburger-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div><!--container hamburger-->
+
+<!--SEARCHBAR XS ONLY (Row '3')
+======================================-->
+            <div class="col-xs-6 hidden-sm hidden-md hidden-lg xsSearchbar">
+              <div class="input-group">
+                <input type="text" class="form-control col-xs-8">
+                <span class="input-group-btn">
+                  <button class="btn btn-info" type="button">Search</button>
+                </span>
+              </div>
+            </div><!--col-md-6 col-sm-12 col-xs-12-->
+
+            </div><!--navbar-header-->
+
+<!--NAVBAR SM,MD,LG (Row 2)
+======================================-->
+            <div class="collapse navbar-collapse" id="navCollapse"><!--collapsibleNav wrapper-->
+              <ul class="nav nav-justified horizontalNav">
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Athletics</a></li>
+                <li><a href="#">Student Life</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Faculty/Staff</a></li>
+              </ul>
+            </div><!--collapse navbar-collapse-->
+
+          </div><!--container-fluid-->
+        </nav><!--navbar navbar-default horizontalNav-->
+      </div><!--row row2-->
+
+<!--TABS (Row 4)
+=================-->
+        <div class="container">
+          <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="tab" href="#futureStudents">Future Students</a></li>
+            <li><a data-toggle="tab" href="#quickLinks">Quick Links</a></li>
+            <li><a data-toggle="tab" href="#onCampus">On Campus</a></li>
+          </ul>
+
+<!--TAB-PANELS (Row 4)
+============================-->
+          <div class="tab-content">
+
+<!--P1-->   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab-pane active fade" id="futureStudents">
+              <ul class="list-group">
+                <a href="#" class="list-group-item">Apply Now</a>
+                <a href="#" class="list-group-item">Academic Program Search</a>
+                <a href="#" class="list-group-item">1-Year (or less) Programs</a>
+                <a href="#" class="list-group-item">2-Year Programs</a>
+              </ul>
+            </div>
+<!--P2-->   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab-pane fade" id="quickLinks">
+              <ul class="list-group">
+                <a href="#" class="list-group-item">Link 1</a>
+                <a href="#" class="list-group-item">Link 2</a>
+                <a href="#" class="list-group-item">Link 3</a>
+                <a href="#" class="list-group-item">Link 4</a>
+              </ul>
+            </div>
+<!--P3-->   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab-pane fade" id="onCampus">
+              <ul class="list-group">
+                <a href="#" class="list-group-item">Something 1</a>
+                <a href="#" class="list-group-item">Something 2</a>
+                <a href="#" class="list-group-item">Something 3</a>
+                <a href="#" class="list-group-item">Something 4</a>
+              </ul>
+            </div>
+          </div><!--tab-content-->
+
+        </div><!--container-->
+
+<!--FOOTER (Row 5)
+======================-->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center footer"><p>&copy 2010 Daytona State College</p></div>
+        </div><!--.row-->
+
+</body>
+
+</html>

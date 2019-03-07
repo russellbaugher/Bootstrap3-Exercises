@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 5</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-
+BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstraptheme.
+min.css" integrity="sha384-
+rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-
+Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+		.logo {
+			min-height: 90px;
+			padding-top: 4px;
+			background-color: #737373;
+      font-size: 200%;
+			color: #fff;
+		}
+		.exploreDaytonaState {
+			margin-right: 20px;
+			margin-bottom: -10px
+		}
+    /* Search
+    =============================*/
+		.searchBarRight {
+			margin-bottom: 3.5px;
+		}
+		.searchButtonRight {
+			margin-bottom: 0px;
+			color: #000;
+		}
+    .searchBarxs {
+      min-height: 80px;
+      font-size: 200%;
+      color: #fff;
+      background-color: #69F;
+    }
+    /* NavAffixed
+    =============================*/
+		.navAffixed {
+      top: 0px;
+      width: 100%;
+      z-index: 9999 !important;
+      margin: 0;
+      padding-top: 13px;
+      background-color: #63F;
+      border-color: #000;
+    }
+		.navAffixed li a {
+			top:4px;
+      margin: 5px;
+      color: #fff;
+		}
+    .navAffixed li a:hover {
+      color: #000;
+    }
+    /* CSNavbar
+    ==============================*/
+    .csNavbar {
+      background-color: #737373;
+      color: #fff;
+    }
+    .csNavbar li a {
+      color: #fff;
+      margin: 10px;
+    }
+    .csNavbarText {
+      color: #fff;
+      background-color: #737373;
+      margin: 0;
+      padding-bottom: 4px;
+    }
+    #navCollapse {
+      background-color: #737373;
+    }
+    .csNavbarxs {
+      background-color: #737373;
+    }
+    .csNavbarTextxs {
+      color:#fff;
+      position: relative;
+      bottom: 3px;
+    }
+	</style>
+
+</head>
+
+<body>
+<!--ROW 1 =================================================================-->
+	<div class="container-fluid">
+		<div class="row logo">
+  <!--LOGO-->
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="text-left">
+					<img class="img-responsive" src="assets/logo.png" alt="Daytona State College"> <!--class="img-responsive"-->
+				</div><!--col1 text-left-->
+			</div><!--col-md-6 col-sm-6 col-xs-6-->
+  <!--STATIC FORM TEXT SM,MD,LG-->
+      <h5 class="form-control-static text-right hidden-xs exploreDaytonaState">Explore Daytona State</h5>
+  <!--SEARCHBAR SM,MD,LG-->
+			<div class="col-md-6 col-sm-6 col-xs-6 hidden-xs">
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input class="form-control searchBarRight" type="text" placeholder="">
+					</div><!--form-group-->
+					<button class="btn button-default searchButtonRight" type="submit">Search</button>
+				</form>
+			</div><!--col-md-6 col-sm-12 col-xs-12-->
+
+		</div><!--row logo-->
+	</div><!--container-fluid row1-->
+
+<!--ROW 2 XS ==============================================================-->
+    <div class="searchBarxs row visible-xs">
+      <div class="col-xs-12 visible-xs">
+  <!--STATIC FORM TEXT-->
+        <h5 class="exploreDaytonaState form-control-static text-right visible-xs">Explore Daytona State</h5>
+  <!--SEARCHBAR XS (Row 2)-->
+        <div class="col-xs-6 hidden-sm hidden-md hidden-lg pull-right">
+          <div class="input-group">
+            <input type="text" class="form-control col-xs-8">
+            <span class="input-group-btn">
+              <button class="btn btn-info" type="button">Search</button>
+            </span>
+          </div><!--input-group-->
+        </div><!--col-xs-6 hidden-sm hidden-md hidden-lg pull-right-->
+      </div><!--col-xs-12 visible-xs-->
+    </div><!--row hidden-sm hidden-md hidden-lg searchBarXS-->
+
+<!--ROW 2 SM,MD,LG ========================================================-->
+	<div class="row">
+  <!--DSC NAVBAR AFFIXED XS,SM,MD,LG-->
+		<nav class="navbar navbar-default horizontalNav navAffixed" data-spy="affix" data-offset-top="91">
+			<div class="container-fluid">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item"><a href="#">Admissions</a></li>
+          <li class="list-inline-item"><a href="#">Academics</a></li>
+          <li class="list-inline-item"><a href="#">Athletics</a></li>
+          <li class="list-inline-item"><a href="#">Student Life</a></li>
+          <li class="list-inline-item"><a href="#">Help</a></li>
+          <li class="list-inline-item"><a href="#">Community</a></li>
+          <li class="list-inline-item"><a href="#">About</a></li>
+          <li class="list-inline-item"><a href="#">Faculty/Staff</a></li>
+        </ul>
+      </div><!--container-fluid-->
+    </nav><!--navbar navbar-default horizontalNav-->
+  </div><!--row row2-->
+
+<!--ROW 3 SM,MD,LG / ROW 4 XS =============================================-->
+  <div class="row">
+    <nav class="navbar navbar-default horizontalNav">
+      <div class="container-fluid">
+        <!--COLLAPSIBLE NAVBAR XS ONLY-->
+        <div class="navbar-header csNavbarxs"><!--header will remain when collapsed-->
+          <!--SCHOOL OF COMPUTER SCIENCE TEXT XS ONLY-->
+          <div class="col-xs-10 visible-xs">
+            <!--SCHOOL OF COMPUTER SCIENCE TEXT-->
+            <h3 class="csNavbarTextxs">School of Computer Science</h3>
+          </div><!--col-xs-10 visible-xs-->
+          <div class="container col-xs-2 visible-xs">
+  <!--HAMBURGER-->
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navCollapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div><!--container col-xs-2 visible-xs-->
+        </div><!--navbar-header-->
+  <!--CS NAVBAR SM,MD,LG-->
+        <div id="navCollapse" class="collapse navbar-collapse">
+            <h3 class="csNavbarText hidden-xs">School of Computer Science</h3>
+          <ul class="csNavbar list-inline text-center">
+            <li class="list-inline-item"><a href="#">Contacts</a></li>
+            <li class="list-inline-item"><a href="#">Faculty</a></li>
+            <li class="list-inline-item"><a href="#">Programs</a></li>
+            <li class="list-inline-item"><a href="#">Classes</a></li>
+            <li class="list-inline-item"><a href="#">Documents</a></li>
+            <li class="list-inline-item"><a href="#">Links</a></li>
+          </ul>
+        </div><!--#navCollapse collapse navbar-collapse-->
+      </div><!--container-fluid-->
+    </nav><!--navbar navbar-default horizontalNav-->
+  </div><!--row-->
+
+<!--ROW 4 SM,MD,LG / ROW 5 XS =============================================-->
+        <div class="row">
+  <!--PANEL CS Image & Text-->
+          <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel">
+                <div class="panel-heading panel-title">
+                  <img class="img-responsive" src="assets/computerScience.jpg"></div>
+                <div class="panel-body">
+                  <p>While the computing field is one of the fastest growing segments of industry, it is
+                     also one of the fastest changing areas technologically. Computing professionals’ education
+                     does not stop with the college degree, but continues with seminars, conferences, and
+                     advanced courses and training. In computer theory and applications, new ideas are
+                     developed every day. Success requires an ongoing commitment to learning to maintain
+                     knowledge, skills and career opportunities.</p>
+                  <p>Daytona State College is the perfect place to start preparing for a career in the
+                     computer science and information technology fields. With more than a dozen programs
+                     from which to choose, you can be sure to get started on the right track.</p>
+                  <p>Most programs also are transferable, allowing you to advance your studies to higher
+                     levels, including the Daytona State College Bachelor of Science in Engineering Technology,
+                     which you can earn in only two years after completing your associate of science degree.
+                     Daytona State College also has articulation agreements with other four-year institutions
+                     that will apply your AS degree credits toward a bachelor’s degree.</p>
+                  <p>For more information visit <a href="/comp_sci/index.html">the Computer Science website</a>.</p>
+                </div>
+              </div>
+            </div><!--col-xs-12 col-sm-12 col-md-6 col-lg-6-->
+  <!--PANEL Gainful Employment Information-->
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel panel-info">
+                <div class="panel-heading panel-title"><h2>Gainful Employment Information</h2></div>
+                <div class="panel-body">
+                  <p>The U.S. Department of Education requires colleges to disclose a variety of information for any financial aid eligible program that “prepares students for gainful employment in a recognized occupation.” The information provided here describes the graduation rates, the median debt of students who completed the program and other important information regarding gainful employment for the latest completed academic year (as of July 1).</p>
+                  <ul>
+                    <li><a href="https://www.daytonastate.edu/gainfulemployment/0938-Computer_Programming/Gedt.html">Computer Programming</a></li>
+                    <li><a href="https://www.daytonastate.edu/gainfulemployment/0903-Information_Technology_Analysis/Gedt.html">Information Technology Analysis</a></li>
+                    <li><a href="https://www.daytonastate.edu/gainfulemployment/0904-Network_Server_Administration/Gedt.html">Information Technology Management</a>&nbsp;(Network Server Administration)
+                    </li>
+                    <li><a href="https://www.daytonastate.edu/gainfulemployment/0908-Advanced_Network_Infrastructure/Gedt.html">Network System Developer</a> (Advanced Network Infrastructure)
+                    </li>
+                    <li><a href="https://www.daytonastate.edu/gainfulemployment/0909-Web_Development_Specialist/Gedt.html">Web Development Specialist</a></li>
+                  </ul>
+                </div><!--panel-body-->
+              </div><!--panel panel-info-->
+            </div><!--col-xs-12 col-sm-12 col-md-6 col-lg-6-->
+          </div><!--container-->
+        </div><!--row-->
+
+<!--FOOTER ================================================================-->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="pull-right" id="social-media">
+                <a href="http://www.facebook.com/pages/Daytona-State-College/111841103729" target="_blank"> <img style="margin-left: 0px; margin-right: 0px; float: left; margin-top: 4px; margin-bottom: 2px;" title="Daytona State College Facebook" src="assets/fb.png" alt="Daytona State College Facebook" width="50" height="51" /> </a>
+                <a href="http://twitter.com/DSC_News/" target="_blank"> <img style="margin-left: 4px; margin-right: 0px; float: left; margin-top: 4px; margin-bottom: 2px;" title="Daytona State College Twitter" src="assets/tw.png" alt="Daytona State College Twitter" width="51" height="51" /> </a>
+                <a href="http://www.youtube.com/user/DaytonaFalcon" target="_blank"> <img style="margin-left: 4px; margin-right: 0px; float: left; margin-top: 4px; margin-bottom: 2px;" title="Daytona State College Youtube" src="assets/ytt.png" alt="Daytona State College Youtube" width="51" height="51" /> </a>
+                <a href="http://www.linkedin.com/company/835780?trk=tyah" target="_blank"> <img style="margin-left: 4px; margin-right: 0px; float: left; margin-top: 4px; margin-bottom: 2px;" title="Daytona State College Linkedin" src="assets/in.png" alt="Daytona State College Linkedin" width="50" height="50" /> </a>
+                <a href="/rss/index.html" target="_blank"> <img style="margin-left: 4px; margin-right: 0px; float: left; margin-top: 4px; margin-bottom: 2px;" title="Daytona State College RSS" src="assets/rss.png" alt="Daytona State College RSS" width="51" height="51" /> </a>
+              </div><!--pull-right-->
+              <div class="" id="footerlinks">
+                <ul class="list-inline">
+                  <li><span style="text-decoration: underline;"><a href="/mission.html">©2010 Daytona State College</a></span></li>
+                  <li><span style="text-decoration: underline;"><a href="/cas/index.html">Accessibility</a></span></li>
+                  <li><span style="text-decoration: underline;"><a href="/contact.html">Contact DSC</a></span></li>
+                  <li><span style="text-decoration: underline;"><a href="/maps/index.html">Campuses</a></span></li>
+                  <li><span style="text-decoration: underline;"><a href="/equity/index.html">Non-Discrimination</a></span></li>
+                  <li><span style="text-decoration: underline;"><a href="http://webapps.daytonastate.edu/ics/ClientConfig/HtmlContent/Privacy.html">Privacy Policy</a></span></li>
+                  <li><span style="text-decoration: underline;"><a href="/web_central/help.html">Web Help</a></span></li>
+                </ul>
+              </div>
+                <p class="footertext">Daytona State College&nbsp;<span style="text-decoration: underline;"><a title="1200 W. International Speedway Blvd. Daytona Beach, Florida 32114" href="/maps/dbmap.html">1200 W. International Speedway Blvd., Daytona Beach, Florida 32114</a></span>&nbsp;(386) 506-3000</p>
+                <p class="footertext">Daytona State College is an <span style="text-decoration: underline;"><a href="/equity/index.html">equal opportunity institution.</a></span></p>
+                <p class="footertext">If you are having any difficulty accessing our website, please contact the help desk at (386) 506-3950 or <span style="text-decoration: underline;"><a href="mailto:helpdesk@daytonastate.edu" target="_blank">helpdesk@daytonastate.edu</a></span>.
+            </div><!--col-sm-12 col-md-12 col-lg-12-->
+          </div><!--row-->
+        </div><!--container-->
+</body>
+
+<!--BUGS
+==================================================
+CS navbar title disappears when affix in operation
+===============================================-->
+</html>

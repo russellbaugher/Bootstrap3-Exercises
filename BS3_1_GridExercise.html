@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 1 Grids</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-
+BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstraptheme.
+min.css" integrity="sha384-
+rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-
+Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-size: 30px;
+    }
+    .container {
+      background-color: beige;
+    }
+    .logo {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 110%;
+      font-weight: bold;
+      background: darkKhaki;
+    }
+    .name {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background: khaki;
+      text-align: center;
+      font-size: 110%;
+      font-weight: bold;
+      letter-spacing: 1.01em;
+    }
+    .content {
+      min-height: 400px;
+      font-size: 90%;
+      padding: 15px;
+      background: lightskyblue;
+    }
+    .sidebar {
+      min-height: 400px;
+      margin-bottom: 10px;
+      font-size: 95%;
+      background: lightGreen;
+    }
+    .footer {
+      min-height: 40px;
+      font-size: 70%;
+      background: khaki;
+    }
+    p {
+      text-align: center;
+    }
+    span {
+      font-weight: bold;
+    }
+    .box {
+      border-radius: 2.5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+<!-- ROW1 -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="box logo hidden-xs"><p>RB</p></div>
+      </div>
+      <div class="col-md-9">
+        <div class="box name"><p>rbaugher.com</p></div>
+      </div>
+    </div>
+<!-- ROW2 -->
+    <div class="row">
+      <div class="col-md-2">
+        <div class="box sidebar hidden-xs hidden-sm"><p><span>Events:</span> <br>School <br>Work <br>Play</p></div>
+      </div>
+      <div class="col-md-8">
+        <div class="box content"><p>Content: Lots of great things happening here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p></div>
+      </div>
+      <div class="col-md-2">
+        <div class="box sidebar"><p><span>News:</span> <br>2017 <br>2018 <br>2019</p></div>
+      </div>
+    </div>
+<!-- ROW3 -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box footer"><p>&copy 2018 About Help Contact </p></div>
+    </div>
+
+  </div> <!-- .container -->
+</body>
